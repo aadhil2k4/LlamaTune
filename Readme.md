@@ -1,8 +1,7 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Dataset: Dolly-15k](https://img.shields.io/badge/Dataset-Dolly--15k-orange)](https://huggingface.co/datasets/databricks/databricks-dolly-15k)
 [![Model: Llama-3.2-1B](https://img.shields.io/badge/Model-Llama--3.2--1B-blue)](https://huggingface.co/meta-llama)
-[![Hugging Face: Adapter](https://img.shields.io/badge/HF-Adapter--QLoRA-yellow)](https://huggingface.co/Kenjiii/llama3.2-1b-dolly15k-qlora-adapter)
-[![Hugging Face: Merged Model](https://img.shields.io/badge/HF-Merged--Model-blue)](https://huggingface.co/Kenjiii/llama3.2-1b-dolly15k-qlora)
+[![Hugging Face: Adapter](https://img.shields.io/badge/HF-Adapter--QLoRA-yellow)](https://huggingface.co/aadhil2k4/llama3.2-1b-dolly15k-qlora-adapter)
+[![Hugging Face: Merged Model](https://img.shields.io/badge/HF-Merged--Model-blue)](https://huggingface.co/aadhil2k4/llama3.2-1b-dolly15k-qlora)
 
 # 🦙 Llama-3.2-1B QLoRA Fine-tuning (PEFT + TRL)
 
@@ -16,8 +15,8 @@ This notebook demonstrates low-VRAM fine-tuning with 4-bit quantization and LoRA
 
 | Type | Hugging Face Link | Description |
 |------|--------------------|--------------|
-| 🧠 **Adapter-only (QLoRA)** | [Kenjiii/llama3.2-1b-dolly15k-qlora-adapter](https://huggingface.co/aadhil2k4/llama3.2-1b-dolly15k-qlora-adapter) | LoRA adapter weights for PEFT loading. Lightweight and ideal for continuing fine-tuning. |
-| 🦙 **Merged model (Full fine-tuned)** | [Kenjiii/llama3.2-1b-dolly15k-qlora](https://huggingface.co/aadhil2k4/llama3.2-1b-dolly15k-qlora) | Base + adapter merged. Ready for direct inference without PEFT. |
+| 🧠 **Adapter-only (QLoRA)** | [aadhil2k4/llama3.2-1b-dolly15k-qlora-adapter](https://huggingface.co/aadhil2k4/llama3.2-1b-dolly15k-qlora-adapter) | LoRA adapter weights for PEFT loading. Lightweight and ideal for continuing fine-tuning. |
+| 🦙 **Merged model (Full fine-tuned)** | [aadhil2k4/llama3.2-1b-dolly15k-qlora](https://huggingface.co/aadhil2k4/llama3.2-1b-dolly15k-qlora) | Base + adapter merged. Ready for direct inference without PEFT. |
 
 > 💡 The adapter version is much smaller (few hundred MB), while the merged model is full-sized (~2–3 GB). Use the adapter for further fine-tuning or lightweight deployment.
 
